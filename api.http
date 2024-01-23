@@ -1,0 +1,25 @@
+# localhost ou seu ip + Porta :3000
+#Ex: localhost:3000
+@baseUrl = 172.21.118.3:3000
+
+# Servidor está de pé
+GET http://@{{baseUrl}}
+###
+
+# Rotas TODOS
+# Listar os todos
+GET http://@{{baseUrl}}/todos
+###
+
+# Recuperar um todo
+GET http://@{{baseUrl}}/todos/1
+###
+
+# Criar um todo
+POST http://@{{baseUrl}}/todos
+Content-Type: application/json
+
+{
+    "title": "novo todo 1"
+}
+###
