@@ -1,6 +1,6 @@
 # localhost ou seu ip + Porta :3000
 #Ex: localhost:3000
-@baseUrl = 172.21.118.3:3000
+@baseUrl = localhost:3000
 
 # Servidor está de pé
 GET http://@{{baseUrl}}
